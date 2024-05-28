@@ -12,7 +12,7 @@ public class CustomizedSerializationDemo01 {
 
         Account01 a1=new Account01();
         System.out.println(a1.username+"........."+a1.pwd);
-
+        
         FileOutputStream fos=new FileOutputStream("abc.ser");
         ObjectOutputStream oos=new ObjectOutputStream(fos);
         oos.writeObject(a1);
@@ -21,5 +21,7 @@ public class CustomizedSerializationDemo01 {
         ObjectInputStream ois=new ObjectInputStream(fis);
         Account01 a01=(Account01) ois.readObject();
         System.out.println(a01.username+"........."+a01.pwd);
+        
+        //Adding the Commented Lines in git hub
     }
 }
